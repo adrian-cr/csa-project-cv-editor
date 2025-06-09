@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #e0ecf7;
+  color: #333;
+}
+
+/* App */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.form-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+/* Header */
+.header {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  font-size: calc(0.5vw + 15px);
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #195087;
+}
+.logo {
+  width: 150px;
+}
+
+/* CVForm */
+.form-container {
+  flex: 1;
+  min-width: 350px;
+  max-width: 550px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+  background: linear-gradient(45deg, #64bcff 0%, #4856fa 70%,  #652ecc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+.form-group, .form-subgroup {
+  margin: 10px 0;
+}
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+textarea.form-input {
+  resize: vertical;
+  min-height: 80px;
+}
+.date-selectors {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+.date-group {
+  display: flex;
+  gap: 5px;
+}
+.month-input {
+  width: 120px;
+}
+.year-input {
+  width: 80px;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+.btn {
+  padding: 8px 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-validate {
+  background: linear-gradient(45deg, #2ecc71 0%, #48dac6 100%);
+  color: white;
+  &:hover {
+    background: #2ecc71;
+    transition: 400ms;
+  }
+}
+.btn-add {
+  background: linear-gradient(45deg, #2e55cc 0%, #589eff 100%);
+  color: white;
+  &:hover {
+    background: #5298ee;
+    transition: 400ms;
+  }
+}
+.btn-reset {
+  background: linear-gradient(45deg, #d631a8 0%, #ff3030 100%);
+  color: white;
+  &:hover {
+    background: rgb(254, 21, 99);
+    transition: 400ms;
+  }
+}
+.btn-delete {
+  background: linear-gradient(45deg, #f3923d 0%, #ff5745 100%);
+  color: white;
+  margin-top: 10px;
+  &:hover {
+    background: #ff8757;
+    transition: 400ms;
+  }
+}
+.error-text {
+  color: rgb(255, 0, 89);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+
+/* CVPreview */
+.preview-canvas {
+  flex: 1;
+  min-width: 350px;
+  max-width: 550px;
+  max-height: 800px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.resume-sheet {
+  padding: 20px;
+}
+.resume-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+.resume-contact {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.resume-section {
+  margin-top: 20px;
+}
+.resume-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
